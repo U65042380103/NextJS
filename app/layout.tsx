@@ -19,17 +19,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <div className="text-4xl">
+      <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600&display=swap" rel="stylesheet"></link>
+      <body className={inter.className }>
+        <div className="text-2xl" style={{ fontFamily: 'Sarabun, sans-serif' }}>
         <Navigation/> 
         </div>
         <Header/>
-        <div className="text-3xl">
+        <div className="text-2xl" style={{ fontFamily: 'Sarabun, sans-serif' }} >
         {children}
         </div>
         </body>
         <br />
-      <div className="text-2xl">
+      <div className="">
       <Footer/>
       </div>
       

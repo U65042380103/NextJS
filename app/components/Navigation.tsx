@@ -10,7 +10,14 @@ export default function Navigation() {
     <div className='text-dark-500 p-6'>
       <h1 className="font-bold text-blue-700">Navigation</h1>
     <Link href="/home" className={pathname==="/home"?"active":""}>
-        Home</Link> | <Link href={"/about"} className={pathname==="/about"?"active":""} >About</Link> | <Link href={"/profile"} className={pathname==="/profile"?"active":""}>Profile</Link>
+         Home</Link> |  &nbsp;
+    <Link href={"/about"} className={pathname==="/about"?"active":""} >
+         About</Link> | &nbsp;
+    <Link href={"/profile"} className={pathname==="/profile"?"active":""}>
+         Profile</Link> | &nbsp;
+    <Link href={"/products"} className={pathname==="/products"?"active":""}>
+         Product</Link>
+
 
     </div>
   </div>

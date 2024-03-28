@@ -5,7 +5,35 @@
 
 a.active {
   font-weight: bold;
-  color: rgb(46, 148, 207);
+  color: rgb(32, 94, 131);
+}
+.table-header {
+  font-weight: bold;
+  background-color: #c9e7ff;
+  border-bottom: 2px solid #307392;
+  height: 5vh; /* กำหนดความสูงของ container เป็น 100% ของ viewport height */
+}
+.table-header1 {
+  font-weight: bold;
+  width: 80%; /* กำหนดความกว้างของตาราง */
+  background-color: #c9e7ff;
+  border-bottom: 2px solid #307392;
+  height: 5vh; /* กำหนดความสูงของ container เป็น 100% ของ viewport height */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* กำหนดความสูงของ container เป็น 100% ของ viewport height */
+}
+
+.table-container {
+  width: 80%; /* กำหนดความกว้างของตาราง */
+}
+
+.text-xl {
+  font-size: 1.25rem; /* กำหนดขนาดตัวอักษรเป็น 1.25rem */
 }
 /* :root {
   --foreground-rgb: 0, 0, 0;

@@ -14,5 +14,7 @@ GET http://localhost:3000/api/student/2
 ###
 GET http://localhost:3000/api/student/3
 ###
+GET http://localhost:3000/api/student/4
+###
 GET http://localhost:3000/api/student/GG
 ###
