@@ -11,6 +11,15 @@ export default async function Page({params})
 {
     const router = useRouter();
     const product = await getDataFromAPI(params.id);
+    const handleDelete =async (id:number)=>{
+        try{
+            await fetch(`/api/products/${id}`,{method:"DELETE",});
+            initProduct()
+        }
+        catch (error){
+            console.log("error===>",error);
+        }
+    };
   return (
     <div>
        
@@ -33,7 +42,9 @@ export default async function Page({params})
                             <td>{product.products_id}</td>
                             <td className=''>{product.products_name}</td>
                             <td className=''>{product.products_price} &nbsp;  บาท</td>
-                            <td><button className='rounded-md bg-sky-100 p-1 text-sky-700' onClick={()=>router.push(`/products`)}> &nbsp; Return &nbsp;</button></td>
+                            <td><button className='rounded-md bg-sky-100 p-1 text-sky-700' onClick={()=>router.push(`/products`)}> &nbsp; Return &nbsp;</button>
+                            <button className='rounded-md bg-pink-100 p-1 text-pink-700' onClick={()=>handleDelete(product.products_id)}> &nbsp; Delete &nbsp;</button>
+                            </td>
                         </tr>
                 }
                 {
